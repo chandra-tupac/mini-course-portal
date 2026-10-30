@@ -12,6 +12,13 @@
     <button id="theme-toggle" type="button">Dark theme</button>
   </header>
 
+  <div class="tabs" role="tablist" aria-label="Course sections">
+    <button type="button" role="tab" id="tab-lesson" data-tab="lesson" aria-controls="panel-lesson" aria-selected="true">Lesson</button>
+    <button type="button" role="tab" id="tab-quiz" data-tab="quiz" aria-controls="panel-quiz" aria-selected="false" tabindex="-1">Quiz</button>
+    <button type="button" role="tab" id="tab-simulator" data-tab="simulator" aria-controls="panel-simulator" aria-selected="false" tabindex="-1">Simulator</button>
+  </div>
+
+  <div class="tab-panel" id="panel-lesson" role="tabpanel" aria-labelledby="tab-lesson">
   <div class="layout">
     <nav class="lesson-nav" aria-label="Lessons">
       <button id="menu-toggle" type="button" aria-expanded="false" aria-controls="lesson-menu">Lessons</button>
@@ -639,47 +646,6 @@
         </div>
       </section>
 
-      <section class="lesson" id="simulator">
-        <h2>Simulator: register an aircraft</h2>
-        <p>Try it yourself. Imagine you want to register an aircraft in Singapore. Answer the five questions below and the simulator will tell you whether it can be registered, and what you would have to do, using the rules from the earlier lessons. Change an answer at any time to see what happens.</p>
-        <form id="sim-form">
-          <fieldset>
-            <legend>1. Who will own the aircraft?</legend>
-            <label><input type="radio" name="owner" value="sg-citizen"> A citizen of Singapore</label>
-            <label><input type="radio" name="owner" value="cw-citizen"> A citizen of another Commonwealth country</label>
-            <label><input type="radio" name="owner" value="sg-company"> A company incorporated in Singapore, with its main place of business in Singapore</label>
-            <label><input type="radio" name="owner" value="foreign-company"> A company incorporated outside the Commonwealth</label>
-            <label><input type="radio" name="owner" value="foreign-citizen"> A citizen of a country outside the Commonwealth</label>
-          </fieldset>
-          <fieldset>
-            <legend>2. Has the aircraft been registered before?</legend>
-            <label><input type="radio" name="history" value="new"> No, it is a new aircraft that has never been registered</label>
-            <label><input type="radio" name="history" value="cancelled"> Yes, in another country, and that registration has been cancelled</label>
-            <label><input type="radio" name="history" value="active"> Yes, in another country, and that registration is still in force</label>
-          </fieldset>
-          <fieldset>
-            <legend>3. What type of aircraft is it?</legend>
-            <label><input type="radio" name="type" value="a subsonic jet aeroplane"> Subsonic jet aeroplane</label>
-            <label><input type="radio" name="type" value="a propeller-driven aeroplane"> Propeller-driven aeroplane</label>
-            <label><input type="radio" name="type" value="a helicopter"> Helicopter</label>
-            <label><input type="radio" name="type" value="a supersonic aeroplane"> Supersonic aeroplane</label>
-          </fieldset>
-          <fieldset>
-            <legend>4. How will it be flown?</legend>
-            <label><input type="radio" name="use" value="normal"> In normal operation</label>
-            <label><input type="radio" name="use" value="testing"> Only for flights such as testing, or travelling to or from an inspection needed for a Certificate of Airworthiness (A or B conditions)</label>
-          </fieldset>
-          <fieldset>
-            <legend>5. What happens to the aircraft later?</legend>
-            <label><input type="radio" name="later" value="none"> Nothing changes</label>
-            <label><input type="radio" name="later" value="sold"> It is sold to a new owner</label>
-            <label><input type="radio" name="later" value="destroyed"> It is destroyed or permanently withdrawn from use</label>
-          </fieldset>
-          <button type="reset" id="sim-reset">Start again</button>
-        </form>
-        <div id="sim-result" class="sim-result" aria-live="polite"></div>
-      </section>
-
       <section class="lesson" id="discussion">
         <h2>Discussion questions and quiz</h2>
         <p>These are the team activities from the lesson. Try them in your own words before checking the earlier sections.</p>
@@ -696,7 +662,7 @@
         <h3>Session 3: vehicles and aircraft</h3>
         <p>Compare registering a vehicle with registering an aircraft. What are the similarities and the differences?</p>
         <h3>Quiz</h3>
-        <p>The original lesson ends with a Kahoot quiz. The link has not been added to this site yet.</p>
+        <p>Ready to test yourself? Open the Quiz tab at the top of the page for an 8-question quiz with a score at the end, or try the Simulator tab to practise registering an aircraft.</p>
       </section>
 
       <div class="pager">
@@ -705,10 +671,158 @@
       </div>
     </main>
   </div>
+  </div>
+
+  <div class="tab-panel" id="panel-quiz" role="tabpanel" aria-labelledby="tab-quiz" hidden>
+    <div class="panel-body">
+      <h2>Quiz</h2>
+      <p>Test what you have learned. There are 8 questions. After you answer each one you will see straight away whether you were right. Your score appears once all 8 are answered.</p>
+      <ol id="final-quiz">
+          <li class="quiz-q">
+            <p>On what date was ICAO established, after the 26th state ratified the Chicago Convention?</p>
+            <ul>
+              <li><button type="button">7 December 1944</button></li>
+              <li><button type="button">19 April 1945</button></li>
+              <li><button type="button" data-correct>4 April 1947</button></li>
+              <li><button type="button">30 May 2026</button></li>
+            </ul>
+            <p class="result" role="status"></p>
+            <p class="explanation" hidden>The Chicago Convention was signed on 7 December 1944. ICAO itself came into being on 4 April 1947.</p>
+          </li>
+          <li class="quiz-q">
+            <p>Which Annex to the Chicago Convention deals with the airworthiness of aircraft?</p>
+            <ul>
+              <li><button type="button">Annex 1</button></li>
+              <li><button type="button">Annex 6</button></li>
+              <li><button type="button" data-correct>Annex 8</button></li>
+              <li><button type="button">Annex 16</button></li>
+            </ul>
+            <p class="result" role="status"></p>
+            <p class="explanation" hidden>Annex 1 covers personnel licensing, Annex 6 the operation of aircraft and Annex 16 environmental protection.</p>
+          </li>
+          <li class="quiz-q">
+            <p>Who is the Minister of Transport's delegate in the ANO, and also the Chief Executive Officer of CAAS?</p>
+            <ul>
+              <li><button type="button">The Secretary General of ICAO</button></li>
+              <li><button type="button" data-correct>The Director General of Civil Aviation (DGCA)</button></li>
+              <li><button type="button">The Managing Director of an airline</button></li>
+              <li><button type="button">The Director General of IATA</button></li>
+            </ul>
+            <p class="result" role="status"></p>
+            <p class="explanation" hidden>Through the ANO the Minister delegates some responsibilities to the DGCA, who is also the CEO of CAAS.</p>
+          </li>
+          <li class="quiz-q">
+            <p>Which document is issued under paragraph 17A of the ANO?</p>
+            <ul>
+              <li><button type="button">Advisory Circulars</button></li>
+              <li><button type="button">Notices of Amendment</button></li>
+              <li><button type="button">Information Circulars</button></li>
+              <li><button type="button" data-correct>The Singapore Airworthiness Requirements</button></li>
+            </ul>
+            <p class="result" role="status"></p>
+            <p class="explanation" hidden>The SAR is issued under paragraph 17A. Advisory Circulars are issued under paragraph 88B.</p>
+          </li>
+          <li class="quiz-q">
+            <p>Which aircraft is correctly classified?</p>
+            <ul>
+              <li><button type="button">Glider: lighter than air</button></li>
+              <li><button type="button" data-correct>Airship: lighter than air, power driven</button></li>
+              <li><button type="button">Free balloon: heavier than air</button></li>
+              <li><button type="button">Helicopter: heavier than air, non-power driven</button></li>
+            </ul>
+            <p class="result" role="status"></p>
+            <p class="explanation" hidden>A glider is heavier than air and not power driven. A free balloon is lighter than air and a helicopter is power driven.</p>
+          </li>
+          <li class="quiz-q">
+            <p>Which form is used to apply to register an aircraft in Singapore?</p>
+            <ul>
+              <li><button type="button" data-correct>Form CAAS(AW) 39</button></li>
+              <li><button type="button">Form CAAS(AW) 143</button></li>
+              <li><button type="button">The Certificate of Registration itself</button></li>
+              <li><button type="button">Form CAAS(AW) 88B</button></li>
+            </ul>
+            <p class="result" role="status"></p>
+            <p class="explanation" hidden>Form CAAS(AW) 143 is for the noise certificate. The Certificate of Registration is what you receive.</p>
+          </li>
+          <li class="quiz-q">
+            <p>What is inscribed on the fireproof plate fixed to a registered aircraft?</p>
+            <ul>
+              <li><button type="button">The pilot's licence number</button></li>
+              <li><button type="button" data-correct>The nationality and registration marks, with the owner's name and address</button></li>
+              <li><button type="button">The date of the last maintenance inspection</button></li>
+              <li><button type="button">The aircraft's noise level</button></li>
+            </ul>
+            <p class="result" role="status"></p>
+            <p class="explanation" hidden>The plate carries the nationality and registration marks together with the registered owner's name and address.</p>
+          </li>
+          <li class="quiz-q">
+            <p>After an aircraft has been registered and given a noise certificate, when is a new noise certificate application needed?</p>
+            <ul>
+              <li><button type="button">Every year</button></li>
+              <li><button type="button">Whenever the aircraft lands abroad</button></li>
+              <li><button type="button">Never, because it is a one-off</button></li>
+              <li><button type="button" data-correct>When its noise level or noise standard has changed</button></li>
+            </ul>
+            <p class="result" role="status"></p>
+            <p class="explanation" hidden>The application is a one-off exercise with registration, and a new one is needed only when the aircraft's noise characteristics change.</p>
+          </li>
+      </ol>
+      <div id="quiz-score" class="sim-result" aria-live="polite" hidden>
+        <h3 id="quiz-score-text"></h3>
+        <p id="quiz-score-note"></p>
+        <button type="button" id="quiz-retake">Retake the quiz</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-panel" id="panel-simulator" role="tabpanel" aria-labelledby="tab-simulator" hidden>
+    <div class="panel-body">
+      <h2>Simulator: register an aircraft</h2>
+      <p>Try it yourself. Imagine you want to register an aircraft in Singapore. Answer the five questions below and the simulator will tell you whether it can be registered, and what you would have to do, using the rules from the earlier lessons. Change an answer at any time to see what happens.</p>
+      <form id="sim-form">
+        <fieldset>
+          <legend>1. Who will own the aircraft?</legend>
+          <label><input type="radio" name="owner" value="sg-citizen"> A citizen of Singapore</label>
+          <label><input type="radio" name="owner" value="cw-citizen"> A citizen of another Commonwealth country</label>
+          <label><input type="radio" name="owner" value="sg-company"> A company incorporated in Singapore, with its main place of business in Singapore</label>
+          <label><input type="radio" name="owner" value="foreign-company"> A company incorporated outside the Commonwealth</label>
+          <label><input type="radio" name="owner" value="foreign-citizen"> A citizen of a country outside the Commonwealth</label>
+        </fieldset>
+        <fieldset>
+          <legend>2. Has the aircraft been registered before?</legend>
+          <label><input type="radio" name="history" value="new"> No, it is a new aircraft that has never been registered</label>
+          <label><input type="radio" name="history" value="cancelled"> Yes, in another country, and that registration has been cancelled</label>
+          <label><input type="radio" name="history" value="active"> Yes, in another country, and that registration is still in force</label>
+        </fieldset>
+        <fieldset>
+          <legend>3. What type of aircraft is it?</legend>
+          <label><input type="radio" name="type" value="a subsonic jet aeroplane"> Subsonic jet aeroplane</label>
+          <label><input type="radio" name="type" value="a propeller-driven aeroplane"> Propeller-driven aeroplane</label>
+          <label><input type="radio" name="type" value="a helicopter"> Helicopter</label>
+          <label><input type="radio" name="type" value="a supersonic aeroplane"> Supersonic aeroplane</label>
+        </fieldset>
+        <fieldset>
+          <legend>4. How will it be flown?</legend>
+          <label><input type="radio" name="use" value="normal"> In normal operation</label>
+          <label><input type="radio" name="use" value="testing"> Only for flights such as testing, or travelling to or from an inspection needed for a Certificate of Airworthiness (A or B conditions)</label>
+        </fieldset>
+        <fieldset>
+          <legend>5. What happens to the aircraft later?</legend>
+          <label><input type="radio" name="later" value="none"> Nothing changes</label>
+          <label><input type="radio" name="later" value="sold"> It is sold to a new owner</label>
+          <label><input type="radio" name="later" value="destroyed"> It is destroyed or permanently withdrawn from use</label>
+        </fieldset>
+        <button type="reset" id="sim-reset">Start again</button>
+      </form>
+      <div id="sim-result" class="sim-result" aria-live="polite"></div>
+    </div>
+  </div>
 
   <script src="js/theme.js"></script>
   <script src="js/lessons.js"></script>
   <script src="js/quiz.js"></script>
   <script src="js/simulator.js"></script>
+  <script src="js/final-quiz.js"></script>
+  <script src="js/tabs.js"></script>
 </body>
 </html>

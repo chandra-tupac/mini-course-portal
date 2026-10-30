@@ -47,7 +47,10 @@
     var index = lessons.findIndex(function (lesson) {
       return lesson.id === id;
     });
-    show(index === -1 ? 0 : index, false);
+    // Other hashes (such as the Quiz and Simulator tabs) leave the current lesson alone.
+    if (index !== -1) {
+      show(index, false);
+    }
   }
 
   function go(index) {
@@ -80,5 +83,6 @@
   });
 
   setMenuOpen(wide.matches);
+  show(0, false);
   fromHash();
 })();

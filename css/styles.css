@@ -126,36 +126,43 @@ main {
   background: var(--surface);
 }
 
-.question ul {
+.question ul,
+.quiz-q ul {
   list-style: none;
   margin: 0.5rem 0;
   padding: 0;
 }
 
-.question li {
+.question li,
+.quiz-q li {
   margin-bottom: 0.4rem;
 }
 
-.question button {
+.question button,
+.quiz-q button {
   width: 100%;
   text-align: left;
   background: var(--bg);
 }
 
-.question button.right {
+.question button.right,
+.quiz-q button.right {
   border-color: #2e7d32;
   border-width: 2px;
 }
 
-.question button.wrong {
+.question button.wrong,
+.quiz-q button.wrong {
   text-decoration: line-through;
 }
 
-.question button:disabled {
+.question button:disabled,
+.quiz-q button:disabled {
   opacity: 1;
 }
 
-.question button.wrong:disabled {
+.question button.wrong:disabled,
+.quiz-q button.wrong:disabled {
   opacity: 0.6;
 }
 
@@ -183,4 +190,43 @@ main {
   padding: 0.5rem 1rem 1rem;
   border: 1px solid var(--border);
   background: var(--surface);
+}
+
+.tabs {
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.5rem 1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.tabs button {
+  border-bottom: none;
+  background: var(--bg);
+}
+
+.tabs button[aria-selected="true"] {
+  font-weight: bold;
+  background: var(--surface);
+  border-bottom: 2px solid var(--accent);
+}
+
+.tab-panel[hidden] {
+  display: none;
+}
+
+.panel-body {
+  max-width: 45rem;
+  padding: 1rem;
+}
+
+.panel-body h2 {
+  margin-top: 0;
+}
+
+#final-quiz {
+  padding-left: 1.5rem;
+}
+
+.quiz-q {
+  margin-bottom: 1.5rem;
 }
