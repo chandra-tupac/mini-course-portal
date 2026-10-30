@@ -10,6 +10,7 @@
 - `index.html`: the single page; one `<section class="lesson">` per lesson
 - `css/styles.css`: styles, including the light and dark theme colors
 - `js/lessons.js`: shows one lesson at a time (menu, Previous/Next, URL hash)
+- `js/quiz.js`: quick check questions (instant feedback, no score)
 - `js/theme.js`: light/dark theme toggle
 
 Update this section when the layout changes.

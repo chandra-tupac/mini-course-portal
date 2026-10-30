@@ -118,3 +118,48 @@ main {
     display: block;
   }
 }
+
+.quick-check {
+  margin-top: 2rem;
+  padding: 0.5rem 1rem 1rem;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.question ul {
+  list-style: none;
+  margin: 0.5rem 0;
+  padding: 0;
+}
+
+.question li {
+  margin-bottom: 0.4rem;
+}
+
+.question button {
+  width: 100%;
+  text-align: left;
+  background: var(--bg);
+}
+
+.question button.right {
+  border-color: #2e7d32;
+  border-width: 2px;
+}
+
+.question button.wrong {
+  text-decoration: line-through;
+}
+
+.question button:disabled {
+  opacity: 1;
+}
+
+.question button.wrong:disabled {
+  opacity: 0.6;
+}
+
+.result {
+  margin: 0;
+  font-weight: bold;
+}
