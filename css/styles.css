@@ -1,0 +1,120 @@
+:root {
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --muted: #555555;
+  --border: #cccccc;
+  --accent: #0b5cad;
+  --surface: #f4f4f4;
+}
+
+:root[data-theme="dark"] {
+  --bg: #1a1a1a;
+  --text: #eeeeee;
+  --muted: #aaaaaa;
+  --border: #444444;
+  --accent: #6cb2ff;
+  --surface: #262626;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+button {
+  font: inherit;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+a {
+  color: var(--accent);
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.layout {
+  padding: 1rem;
+}
+
+.lesson-nav ol {
+  margin: 0.5rem 0 1rem;
+  padding-left: 1.5rem;
+}
+
+.lesson-nav ol[hidden] {
+  display: none;
+}
+
+.lesson-nav a[aria-current="true"] {
+  font-weight: bold;
+  color: var(--text);
+}
+
+main {
+  max-width: 45rem;
+}
+
+.lesson[hidden] {
+  display: none;
+}
+
+.lesson h2 {
+  margin-top: 0;
+}
+
+.pager {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+@media (min-width: 48rem) {
+  .layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+
+  .lesson-nav {
+    flex: 0 0 15rem;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  .lesson-nav ol[hidden] {
+    display: block;
+  }
+}

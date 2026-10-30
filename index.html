@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Regulatory Framework – Mini-Course</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Regulatory Framework</h1>
+    <button id="theme-toggle" type="button">Dark theme</button>
+  </header>
+
+  <div class="layout">
+    <nav class="lesson-nav" aria-label="Lessons">
+      <button id="menu-toggle" type="button" aria-expanded="false" aria-controls="lesson-menu">Lessons</button>
+      <ol id="lesson-menu"></ol>
+    </nav>
+
+    <main id="lessons">
+
+      <section class="lesson" id="overview">
+        <h2>Overview</h2>
+        <p>This course looks at the rules that govern civil aviation, from the international agreements at the top down to the documents an aircraft owner in Singapore has to deal with. It is part of the Aviation Legislation module (Module 10, which incorporates CAAS SAR Part 66) of the Aviation Legislation and Human Factors course, E238.</p>
+        <p>By the end you should be able to:</p>
+        <ul>
+          <li>Describe the roles of ICAO, IATA and CAAS.</li>
+          <li>Explain how civil aviation is regulated in Singapore.</li>
+          <li>Explain the Air Navigation Order (ANO), the Singapore Airworthiness Requirements (SAR), Airworthiness Notices, Advisory Circulars, Notices of Amendment and Information Circulars.</li>
+          <li>Identify the classes of aircraft.</li>
+          <li>Explain aircraft registration, the Certificate of Registration, nationality and registration marks, and the noise certificate.</li>
+        </ul>
+      </section>
+
+      <section class="lesson" id="why-study">
+        <h2>Why we study airworthiness legislation</h2>
+        <p>In 2023 the US Federal Aviation Administration (FAA) proposed a civil penalty of $1.149 million against United Airlines. The FAA alleged that the airline flew Boeing 777 aircraft without carrying out a maintenance inspection that its own approved maintenance program required. It said the airline had removed a required Fire System Warning Check from the 777 preflight checklist, so the aircraft were allegedly operated in a condition that did not meet airworthiness requirements.</p>
+        <p>The example shows what is at stake. Aviation is among the most extensively and strictly regulated of human activities, for several reasons:</p>
+        <ul>
+          <li>It is technically and operationally complex.</li>
+          <li>Safety and security in aircraft operation are major concerns.</li>
+          <li>It is international by nature.</li>
+          <li>It needs detailed legal regulation, enforced through both national and international mechanisms.</li>
+        </ul>
+        <p>Airworthiness legislation brings the basic legal principles, standards and procedures of different countries into line (in Singapore, through the ANO). Countries may still interpret those principles in their own way, so anyone working in the industry needs to understand the regulations that apply in Singapore. This course focuses on Maintenance, Repair and Overhaul (MRO).</p>
+      </section>
+
+      <section class="lesson" id="icao">
+        <h2>The role of ICAO</h2>
+        <p>The International Civil Aviation Organization (ICAO) exists to harmonise the regulations that allow aircraft to cross borders. Its history explains why:</p>
+        <ul>
+          <li>The first international convention on civil aviation was held in 1919 and set up the International Commission for Air Navigation (ICAN).</li>
+          <li>After World War 2 destroyed many rail lines and roads, aviation was seen as an effective means of transport. In November 1944 the United States invited 53 states to preliminary discussions.</li>
+          <li>52 nations, plus 2 observer nations, attended. After five weeks, on 7 December 1944, they signed the Convention on International Civil Aviation, known as the Chicago Convention.</li>
+          <li>A Provisional ICAO (PICAO) ran until 3 April 1947. ICAO itself was established on 4 April 1947, after the 26th state ratified the Chicago Convention.</li>
+          <li>In October 1947 ICAO became a specialised agency of the United Nations, linked to the Economic and Social Council (ECOSOC).</li>
+        </ul>
+        <p>The countries that signed the Chicago Convention are called Contracting States. The deck gives the total as 193 (as of 30 May 2026). ICAO also defines the protocols that these countries' transport safety authorities follow after an air accident.</p>
+        <h3>Standards and Recommended Practices</h3>
+        <p>The ICAO Council adopts Standards and Recommended Practices (SARPs) in these broad areas: air navigation and its infrastructure, flight inspections, prevention of unlawful interference, and facilitating border-crossing procedures for international civil aviation.</p>
+        <p>The Chicago Convention is supported by 18 Annexes that contain the SARPs:</p>
+        <ol>
+          <li>Personnel Licensing</li>
+          <li>Rules of the Air</li>
+          <li>Meteorological Service for International Air Navigation</li>
+          <li>Aeronautical Charts</li>
+          <li>Units of Measurement to be Used in Air and Ground Operations</li>
+          <li>Operation of Aircraft</li>
+          <li>Aircraft Nationality and Registration Marks</li>
+          <li>Airworthiness of Aircraft</li>
+          <li>Facilitation</li>
+          <li>Aeronautical Telecommunications</li>
+          <li>Air Traffic Services</li>
+          <li>Search and Rescue</li>
+          <li>Aircraft Accident and Incident Investigation</li>
+          <li>Aerodromes</li>
+          <li>Aeronautical Information Services</li>
+          <li>Environmental Protection</li>
+          <li>Security: Safeguarding International Civil Aviation Against Acts of Unlawful Interference</li>
+          <li>The Safe Transport of Dangerous Goods by Air</li>
+        </ol>
+      </section>
+
+      <section class="lesson" id="iata">
+        <h2>The role of IATA</h2>
+        <p>The International Air Transport Association (IATA) is a different kind of body from ICAO. It is an international trade association of airlines, not an organisation of governments.</p>
+        <ul>
+          <li>It is headquartered in Montreal, Canada, and was formed on 19 April 1945 in Havana, Cuba.</li>
+          <li>It is the successor to the International Air Traffic Association, founded in The Hague in 1919.</li>
+          <li>It has over 370 member airlines from 120 nations.</li>
+        </ul>
+        <p>IATA aims to help airlines simplify processes and increase passenger convenience while reducing costs and improving efficiency. It argues for the interests of airlines around the world: it challenges unreasonable rules and charges, holds regulators and governments to account, and pushes for sensible regulation. Its stated mission is to represent, lead and serve the airline industry.</p>
+      </section>
+
+      <section class="lesson" id="singapore">
+        <h2>Civil aviation in Singapore</h2>
+        <p>Singapore is a Contracting State of ICAO, so it has to turn the Chicago Convention into its own law. It does this in layers:</p>
+        <ol>
+          <li>The Chicago Convention (1944) led to the creation of ICAO (1947).</li>
+          <li>The Singapore Government makes Singapore legislation. The Air Navigation Act (ANA) of 1966 is an Act of Parliament that provides for the control and regulation of aviation and gives effect to the parts of the Chicago Convention that regulate air navigation.</li>
+          <li>The Act empowers the Minister of Transport. The Ministry of Transport (MOT) is responsible for the civil aviation industry in Singapore.</li>
+          <li>Under the Act, the Minister makes the Air Navigation Order (ANO), a statutory instrument. The ANO sets out in detail the law of the land on civil aviation and keeps it in line with the ICAO SARPs.</li>
+          <li>Through the ANO, the Minister delegates some responsibilities to the Director General of Civil Aviation (DGCA), who is also the Chief Executive Officer (CEO) of the Civil Aviation Authority of Singapore (CAAS).</li>
+          <li>CAAS makes further, subsidiary regulations that guide the industry by setting minimum requirements: the Singapore Airworthiness Requirements (SAR), Airworthiness Notices (AN) and Advisory Circulars (AC). It also issues two non-regulatory documents, Information Circulars and Notices of Amendment.</li>
+        </ol>
+        <h3>How an Act is made</h3>
+        <p>The Air Navigation Act began as a Bill in Parliament, like any other Singapore law. The government may first issue a White Paper, a statement of policy that often sets out proposed legal changes and may be debated before a Bill is introduced. Then:</p>
+        <ol>
+          <li>The draft law is introduced in Parliament as a Bill. A Bill brought by a minister on behalf of the cabinet is a Government Bill. One brought by other members of Parliament is a Private Member's Bill.</li>
+          <li>First reading: the Bill is introduced without debate.</li>
+          <li>Second reading: Parliament debates the Bill.</li>
+          <li>If it is accepted, it goes to a Select Committee, which examines every clause. Members who support the Bill but not some of its clauses can propose amendments.</li>
+          <li>Third reading: only minor amendments are allowed before the Bill is passed.</li>
+          <li>The Bill is presented for the President's assent.</li>
+        </ol>
+      </section>
+
+      <section class="lesson" id="caas">
+        <h2>The role of CAAS</h2>
+        <p>The Civil Aviation Authority of Singapore (CAAS) is a statutory board under the Ministry of Transport. It represents the Singapore Government in negotiating air services agreements and advises the government on civil aviation matters. It performs three key roles:</p>
+        <ul>
+          <li><strong>Air navigation service provider.</strong> It develops and maintains the critical air navigation systems and delivers the services that underpin air traffic operations from end to end.</li>
+          <li><strong>Regulator.</strong> It develops and implements regulatory frameworks aligned with the ICAO SARPs and national requirements, oversees safety, and identifies and reduces state-level risks. It also promotes a strong safety culture in the industry and right-sized regulation.</li>
+          <li><strong>Industry developer.</strong> It gives strategic leadership to shape the development of Singapore's aviation sector, turning policy directions into long-term plans and aligning the priorities of the aviation ecosystem.</li>
+        </ul>
+        <p>Two CAAS divisions matter most for this course. The Airworthiness/Flight Operations Division has eight sections: Flight Operations, Continuing Airworthiness, Maintenance Organisations, Foreign Operators Surveillance, Dangerous Goods, Airworthiness Engineering, Design and Production Organisations, and Personnel Licensing. The Safety Policy and Planning Division has four: Regulatory Development, Safety Assurance, Stakeholder Engagement, and Strategy and Planning.</p>
+      </section>
+
+      <section class="lesson" id="ano">
+        <h2>The Singapore Air Navigation Order</h2>
+        <p>The ANO is under constant review, and it is amended after any parliamentary action. Its principal parts are:</p>
+        <ul>
+          <li>Airworthiness and Equipment of Aircraft</li>
+          <li>Aircraft Crew and Licensing</li>
+          <li>Aircraft Noise</li>
+          <li>Exhibitions of Flying</li>
+          <li>Documents and Records</li>
+          <li>Control of Air Traffic</li>
+          <li>Aerodromes</li>
+          <li>Aeronautical Lights and Dangerous Lights</li>
+          <li>General</li>
+        </ul>
+        <p>Details that need their own tables are placed in schedules. Some of them are:</p>
+        <ul>
+          <li>Third: Categories of Aircraft</li>
+          <li>Seventh: Aircraft, Engine and Propeller Log Books</li>
+          <li>Eighth: Flight Crew of Aircraft, Licences and Ratings</li>
+          <li>Twelfth: Fees</li>
+          <li>Thirteenth: Penalties</li>
+          <li>Seventeenth: Air Traffic Controllers Rating</li>
+        </ul>
+      </section>
+
+      <section class="lesson" id="caas-documents">
+        <h2>SAR, Airworthiness Notices and other CAAS documents</h2>
+        <p>The documents CAAS issues under the ANO fall into two groups: regulatory documents that must be complied with, and non-regulatory documents that inform.</p>
+        <h3>Singapore Airworthiness Requirements (SAR)</h3>
+        <p>The SAR is a regulatory document issued under ANO paragraph 17A. It sets the minimum requirements for the airworthiness of aircraft, aircraft engineering and maintenance, the licensing of aircraft maintenance engineers, and the approval of persons and organisations. These requirements must be complied with. The SAR is organised into 6 sections and 5 parts.</p>
+        <p>The sections are: General; Aircraft Airworthiness; Component and Equipment Airworthiness; Engineering and Maintenance Administration; Aircraft Performance; and Approval of Persons and Organisations.</p>
+        <p>The parts are:</p>
+        <ul>
+          <li>Part 21: Certification of Products and Articles, and of Design and Production Organisations</li>
+          <li>Part 39: Airworthiness Directives</li>
+          <li>Part 66: Aircraft Maintenance Licensing</li>
+          <li>Part 145: Approved Maintenance Organisations</li>
+          <li>Part 147: Approved Maintenance Training Organisations</li>
+        </ul>
+        <h3>Airworthiness Notices (AN)</h3>
+        <p>CAAS issues Airworthiness Notices to circulate administrative or technical information to everyone concerned with the airworthiness of aircraft. They come in three parts: Part A, General Administration; Part B, Procedures; and Part C, Matters Directly Involving Airworthiness.</p>
+        <h3>Advisory Circulars (AC)</h3>
+        <p>An Advisory Circular is a regulatory document issued by CAAS under ANO paragraph 88B. The Chief Executive may issue them on any aspect of safety in civil aviation, including aircraft operations, the inspection, overhaul, repair, replacement or modification of aircraft and components, matters relating to licence holders, and the operation and management of an aerodrome. They pass on information about standards, practices and procedures that are acceptable to CAAS. They are grouped into sections: General; Airworthiness Certification; Air Operators; Foreign Operator Surveillance; Maintenance; Licensing; Training Organisation; Dangerous Goods Regulations; and Unmanned Aircraft.</p>
+        <h3>Notices of Amendment and Information Circulars</h3>
+        <p>Both of these are issued by CAAS and are non-regulatory. A Notice of Amendment tells readers about changes to regulatory information. For example, one announced a new issue of a Singapore Air Safety Publication. An Information Circular communicates administrative and other non-regulatory information. For example, one set out the service standards for processing aviation safety instruments.</p>
+      </section>
+
+      <section class="lesson" id="classification">
+        <h2>Aircraft classification</h2>
+        <p>The next part of the course is about owning an aircraft, and the first step is knowing what counts as an aircraft. Schedule 1 of the ANO gives a general classification (see paragraphs 2(5), 4(6) and 23(1)). The first split is by how the aircraft stays up, and the second is by whether it has an engine.</p>
+        <ul>
+          <li><strong>Lighter than air, non-power driven:</strong> free balloons and captive balloons.</li>
+          <li><strong>Lighter than air, power driven:</strong> airships.</li>
+          <li><strong>Heavier than air, non-power driven:</strong> kites and gliders.</li>
+          <li><strong>Heavier than air, power driven:</strong> aeroplanes (landplane, seaplane, amphibian and self-launching motor glider), powered-lift aircraft (tilt rotor), rotorcraft (helicopters) and auto-gyroplanes.</li>
+        </ul>
+      </section>
+
+      <section class="lesson" id="registration">
+        <h2>Aircraft registration requirements</h2>
+        <p>Under the ICAO Convention, the applicable categories of aircraft must be registered with their national aviation authority. In Singapore, registration is governed by paragraphs 3 and 4 of the ANO. The registration document is the Certificate of Registration (CoR). It must be on board the aircraft, with some exceptions, to show that the aircraft is registered.</p>
+        <h3>Paragraph 3: the need to register</h3>
+        <p>An aircraft may not fly in Singapore unless it is registered in Singapore, in another Contracting State, or in a state that has an agreement with the Singapore Government allowing its aircraft to fly here. There are limited exceptions, including flights that start and end in Singapore without passing over another state, flights under the "B Conditions", and flights under a permit issued by the Chief Executive. The rule does not apply to kites or captive balloons.</p>
+        <h3>Paragraph 4: how registration works</h3>
+        <ul>
+          <li>The Chief Executive (the DGCA/CEO of CAAS) is the authority for registering aircraft in Singapore.</li>
+          <li>An aircraft shall not be registered, or stay registered, if it is registered outside Singapore and that registration does not end by operation of law; if an unqualified person is entitled to own any legal or beneficial interest in it; or if it would be inexpedient in the public interest.</li>
+          <li>Only the following can own a legal or beneficial interest in a Singapore-registered aircraft: the Government, citizens of Singapore, citizens of any Commonwealth country, and bodies incorporated in Singapore or in part of the Commonwealth that have their principal place of business in the Commonwealth.</li>
+          <li>The application is made in writing and must include the aircraft's general classification from the ANO's First Schedule. Once satisfied, the Chief Executive registers the aircraft and gives the registered owner a Certificate of Registration.</li>
+          <li>The registered owner must tell the Chief Executive promptly about changes to the registered particulars, and about the aircraft's destruction or permanent withdrawal from use. The Chief Executive can amend the register, or cancel a registration, when ownership changes.</li>
+        </ul>
+      </section>
+
+      <section class="lesson" id="registration-certificate">
+        <h2>The Certificate of Registration</h2>
+        <p>Chapter 1.3 of the SAR sets out how the requirements of ANO paragraph 4 are met in practice.</p>
+        <ul>
+          <li>Registration is a one-off exercise unless the ownership changes.</li>
+          <li>For a corporate owner, the responsibility falls on the Managing Director, the Company Secretary or other officials authorised to sign under the company seal.</li>
+          <li>To register an aircraft, apply on Form CAAS(AW) 39 and submit it to CAAS. The fee is in the ANO's Twelfth Schedule.</li>
+          <li>Before registration, the applicant must show proof that the aircraft is not registered elsewhere: proof that a foreign registration has been cancelled or, for a new aircraft, proof that it has never been registered.</li>
+        </ul>
+        <h3>Change of ownership and cancellation</h3>
+        <ul>
+          <li>When the owner changes, a new CoR must be issued. The new owner applies on Form CAAS(AW) 39.</li>
+          <li>The aircraft must not be flown until the change of ownership is complete.</li>
+          <li>The former owner completes Section I or II on the back of the original CoR and returns it to the DGCA.</li>
+          <li>Cancelling a registration can only be requested by the owner, who completes Section III or IV on the back of the original CoR. Cancellation is notified to a foreign authority only if the owner asks.</li>
+        </ul>
+      </section>
+
+      <section class="lesson" id="marks">
+        <h2>National and registration marks</h2>
+        <p>Under paragraph 5 of the ANO, an aircraft cannot fly unless it has its nationality and registration marks painted or affixed on it. The detailed rules for Singapore are in Part B of the First Schedule.</p>
+        <ul>
+          <li>The nationality mark for Singapore is "9V".</li>
+          <li>The registration mark is a group of three letters assigned by the DGCA/CEO.</li>
+          <li>The two are written together with a hyphen between them: "9V-XXX".</li>
+        </ul>
+        <p>Where the marks go depends on the type of aircraft:</p>
+        <ul>
+          <li><strong>Heavier-than-air aircraft:</strong> on a fixed-wing aircraft, on the lower surface of the port wing (unless the marks extend across the whole wing surface), and once on each side of the fuselage between the wing and the horizontal tail surface, or on the vertical tail surfaces.</li>
+          <li><strong>Lighter-than-air aircraft:</strong> on both sides of airships and balloons.</li>
+        </ul>
+        <p>The schedule also sets the size, margins, width, spacing and thickness of the lettering. In addition, the nationality and registration marks, together with the owner's name and address, must be inscribed on a fireproof plate fixed to the aircraft. The schedule says where that plate goes for balloons and for other aircraft.</p>
+      </section>
+
+      <section class="lesson" id="noise-certificate">
+        <h2>The noise certificate</h2>
+        <p>All aircraft must meet the noise certification requirements set by their national aviation authority, and those requirements follow the standard adopted by ICAO. Singapore follows ICAO Annex 16, Volume 1. The rules are in Part VI of the ANO, with the practical details in Chapter 1.4 of the SAR.</p>
+        <h3>The rule</h3>
+        <ul>
+          <li>A Singapore-registered aircraft shall not operate unless it has been issued a noise certificate.</li>
+          <li>The only exception is an aircraft flying under "A" or "B" conditions.</li>
+          <li>The DGCA/CEO may issue a noise certificate if the aircraft producer confirms compliance, either through a statement in the type certificate or through a producer noise certificate.</li>
+        </ul>
+        <h3>A and B conditions</h3>
+        <p><strong>A condition.</strong> The aircraft flies only so that it can qualify for the issue or renewal of a Certificate of Airworthiness (or its validation, or approval of a modification), or to travel to or from a place where an inspection, test or weighing for that purpose will take place.</p>
+        <p><strong>B conditions.</strong></p>
+        <ul>
+          <li>The flight is made under the supervision of a person approved by the Chief Executive.</li>
+          <li>If the aircraft is not registered in Singapore (or in a country named in paragraph 3 of the Order), it is marked in a way approved by the Chief Executive and must comply with several listed paragraphs of the Order as if it were registered in Singapore.</li>
+          <li>It flies only to experiment with or test the aircraft (including its engines and equipment), to qualify for a Certificate of Airworthiness or a modification approval, or to travel to or from a place where such a test, inspection or weighing will happen.</li>
+          <li>It carries the flight crew needed to keep it safe.</li>
+        </ul>
+        <h3>Applying for a noise certificate (SAR Chapter 1.4)</h3>
+        <ul>
+          <li>Applying is a one-off exercise done together with registering the aircraft. A new application is needed only if the aircraft's noise characteristics change.</li>
+          <li>The noise certificate must be carried on board the aircraft.</li>
+          <li>The application is made on Form CAAS(AW) 143 and submitted to CAAS.</li>
+          <li>The standards used are in Part II of ICAO Annex 16, Volume 1. Different chapters apply to subsonic jet aircraft, propeller-driven aircraft, helicopters and supersonic aircraft.</li>
+          <li>The application must be supported by documents showing the aircraft complies with the relevant chapters, and by the information the SAR lists. Acceptable supporting documents include a noise certificate issued by the State of Design, or a statement in the Flight Manual or Type Certificate.</li>
+        </ul>
+      </section>
+
+      <section class="lesson" id="discussion">
+        <h2>Discussion questions and quiz</h2>
+        <p>These are the team activities from the lesson. Try them in your own words before checking the earlier sections.</p>
+        <h3>Session 1: the regulators</h3>
+        <ol>
+          <li>What is the main difference between ICAO, IATA and CAAS in civil aviation?</li>
+          <li>Why was ICAO established, and what is its role in international aviation today?</li>
+          <li>How do international aviation standards become part of Singapore's civil aviation system?</li>
+          <li>What does the flow from the Chicago Convention to Singapore legislation show about aviation regulation?</li>
+          <li>Why is CAAS important in the Singapore civil aviation system even though ICAO already sets international standards?</li>
+        </ol>
+        <h3>Session 2: registering a vehicle</h3>
+        <p>You and some friends are about to set up a delivery company in Singapore that will own lorries, vans, cars, motorcycles and personal mobility devices (PMDs). List the steps needed to own and register a vehicle in Singapore, and discuss them as a team.</p>
+        <h3>Session 3: vehicles and aircraft</h3>
+        <p>Compare registering a vehicle with registering an aircraft. What are the similarities and the differences?</p>
+        <h3>Quiz</h3>
+        <p>The original lesson ends with a Kahoot quiz. The link has not been added to this site yet.</p>
+      </section>
+
+      <div class="pager">
+        <button id="prev" type="button">Previous</button>
+        <button id="next" type="button">Next</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/theme.js"></script>
+  <script src="js/lessons.js"></script>
+</body>
+</html>

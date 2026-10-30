@@ -7,11 +7,10 @@
 
 ## Project Structure
 
-The repository is nearly empty for now. As files are added, keep them here:
-
-- `index.html` and other pages: top level
-- `css/`: stylesheets
-- `js/`: scripts
+- `index.html`: the single page; one `<section class="lesson">` per lesson
+- `css/styles.css`: styles, including the light and dark theme colors
+- `js/lessons.js`: shows one lesson at a time (menu, Previous/Next, URL hash)
+- `js/theme.js`: light/dark theme toggle
 
 Update this section when the layout changes.
 
