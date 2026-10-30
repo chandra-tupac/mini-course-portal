@@ -639,6 +639,47 @@
         </div>
       </section>
 
+      <section class="lesson" id="simulator">
+        <h2>Simulator: register an aircraft</h2>
+        <p>Try it yourself. Imagine you want to register an aircraft in Singapore. Answer the five questions below and the simulator will tell you whether it can be registered, and what you would have to do, using the rules from the earlier lessons. Change an answer at any time to see what happens.</p>
+        <form id="sim-form">
+          <fieldset>
+            <legend>1. Who will own the aircraft?</legend>
+            <label><input type="radio" name="owner" value="sg-citizen"> A citizen of Singapore</label>
+            <label><input type="radio" name="owner" value="cw-citizen"> A citizen of another Commonwealth country</label>
+            <label><input type="radio" name="owner" value="sg-company"> A company incorporated in Singapore, with its main place of business in Singapore</label>
+            <label><input type="radio" name="owner" value="foreign-company"> A company incorporated outside the Commonwealth</label>
+            <label><input type="radio" name="owner" value="foreign-citizen"> A citizen of a country outside the Commonwealth</label>
+          </fieldset>
+          <fieldset>
+            <legend>2. Has the aircraft been registered before?</legend>
+            <label><input type="radio" name="history" value="new"> No, it is a new aircraft that has never been registered</label>
+            <label><input type="radio" name="history" value="cancelled"> Yes, in another country, and that registration has been cancelled</label>
+            <label><input type="radio" name="history" value="active"> Yes, in another country, and that registration is still in force</label>
+          </fieldset>
+          <fieldset>
+            <legend>3. What type of aircraft is it?</legend>
+            <label><input type="radio" name="type" value="a subsonic jet aeroplane"> Subsonic jet aeroplane</label>
+            <label><input type="radio" name="type" value="a propeller-driven aeroplane"> Propeller-driven aeroplane</label>
+            <label><input type="radio" name="type" value="a helicopter"> Helicopter</label>
+            <label><input type="radio" name="type" value="a supersonic aeroplane"> Supersonic aeroplane</label>
+          </fieldset>
+          <fieldset>
+            <legend>4. How will it be flown?</legend>
+            <label><input type="radio" name="use" value="normal"> In normal operation</label>
+            <label><input type="radio" name="use" value="testing"> Only for flights such as testing, or travelling to or from an inspection needed for a Certificate of Airworthiness (A or B conditions)</label>
+          </fieldset>
+          <fieldset>
+            <legend>5. What happens to the aircraft later?</legend>
+            <label><input type="radio" name="later" value="none"> Nothing changes</label>
+            <label><input type="radio" name="later" value="sold"> It is sold to a new owner</label>
+            <label><input type="radio" name="later" value="destroyed"> It is destroyed or permanently withdrawn from use</label>
+          </fieldset>
+          <button type="reset" id="sim-reset">Start again</button>
+        </form>
+        <div id="sim-result" class="sim-result" aria-live="polite"></div>
+      </section>
+
       <section class="lesson" id="discussion">
         <h2>Discussion questions and quiz</h2>
         <p>These are the team activities from the lesson. Try them in your own words before checking the earlier sections.</p>
@@ -668,5 +709,6 @@
   <script src="js/theme.js"></script>
   <script src="js/lessons.js"></script>
   <script src="js/quiz.js"></script>
+  <script src="js/simulator.js"></script>
 </body>
 </html>
